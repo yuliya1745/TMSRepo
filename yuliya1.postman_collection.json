@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "803ad8b0-59bd-470e-b2f6-0fa522697e74",
+		"name": "yuliya1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\":\"yulia17@gmail.com\",\r\n\"name\":\"yuliya\",\r\n\"tasks\":[137],\r\n\"companies\":[20],\r\n\"hobby\":\"wakeboarding\",\r\n\"adres\":\"40 let pobedy 30g\",\r\n\"name1\":\"yuliya\",\r\n\"surname1\": \"urbanovich\",\r\n\"fathername1\":\"andreevna\",\r\n\"cat\": \"knopa\",\r\n\"dog\": \"gek\",\r\n\"parrot\":\"bil\",\r\n\"cavy\":\"vil\",\r\n\"hamster\":\"tul\",\r\n\"squirrel\":\"bel\",\r\n\"phone\":\"375333221808\",\r\n\"inn\":\"780982587912\",\r\n\"gender\":\"female\",\r\n\"birthday\":\"17.12.1994\",\r\n\"date_start\":\"01.09.2021\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/createuser",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"createuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\":\"yulia17@gmail.com\",\r\n\"name\":\"yuliya\",\r\n\"tasks\":[137],\r\n\"companies\":[20],\r\n\"hobby\":\"snowboarding\",\r\n\"adres\":\"40 let pobedy 30g fl3\",\r\n\"name1\":\"yuliya\",\r\n\"surname1\": \"urbanovich\",\r\n\"fathername1\":\"andreevna\",\r\n\"cat\": \"knopa\",\r\n\"dog\": \"gek\",\r\n\"parrot\":\"bil\",\r\n\"cavy\":\"vil\",\r\n\"hamster\":\"tul\",\r\n\"squirrel\":\"bel\",\r\n\"phone\":\"375333221808\",\r\n\"inn\":\"780982587912\",\r\n\"gender\":\"f\",\r\n\"birthday\":\"17.12.1994\",\r\n\"date_start\":\"01.09.2017\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/fullupdateuser",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"fullupdateuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email_owner\":\"yulia17@gmail.com\",\r\n    \"email_assign\":\"yulia17@gmail.com\",\r\n    \"name\":\"yuliya\",\r\n    \"task_title\":\"test\",\r\n    \"task_description\":\"test\",\r\n    \"task\":[130]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/createtask",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"createtask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email_owner\":\"yulia17@gmail.com\",\r\n\"email_assign\":\"yulia17@gmail.com\",\r\n\"name\":\"yuliya\",\r\n\"id_task\":\"154\",\r\n\"task_title\":\"пумба\",\r\n\"task_description\": \"пумба\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/updatetask",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"updatetask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email_owner\":\"yulia17@gmail.com\",\r\n    \"email_assign\":\"yulia17@gmail.com\",\r\n    \"name\":\"yuliya\",\r\n    \"task_id\":\"150\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/deletetask",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"deletetask"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
